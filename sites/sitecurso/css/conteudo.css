@@ -1,0 +1,44 @@
+main{
+    float: right;
+    width: 710px;
+}
+
+section{
+    margin: auto;
+    margin-top: 30px;
+}
+
+.section_destaque{
+    width: 670px;
+    padding: 10px;
+    border: 1px solid #023373;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -8px #023373;
+    margin-bottom: 25px;
+}
+
+.section_destaque:hover{
+    border: 2px solid #d90420;
+    
+}
+
+.beneficios_destaque{
+    display: inline-block;
+    width: 140px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid #023373;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 15px -8px #000000;
+    margin-right: 20px;
+}
+
+.beneficios_destaque:hover{
+    border-color: #d90420;
+    box-shadow: #d90420;
+}
+
+.beneficios_destaque img{
+    width: 100px;
+}

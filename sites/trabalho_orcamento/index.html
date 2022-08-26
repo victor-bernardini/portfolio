@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Meta tags Obrigatórias -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>App Orçamento</title>
+    </head>
+
+    <body class="bg-secondary text-info mt-5">
+        <div class="container">
+            <div class="card bg-dark">
+                <div class="card-header">
+                    <h5>ORÇAMENTO</h5>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2">
+                            <label>Descrição:</label>
+                            <input id="descricao" type="text" class="form-control">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 mt-2">
+                            <label>Valor:</label>
+                            <input id="valor" type="number" class="form-control">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 mt-2">
+                            <button onclick="adicionarItem();" type="button" class="mt-4 btn btn-lg btn-info text-warning">
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-2 text-center">
+                            <h4>Itens do Orçamento:</h4>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-2">
+                            <table class="table table-striped table-dark table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Descrição:</th>
+                                        <th class="text-right">Valor:</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabela_itens_orcamento">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <p>
+                        Valor total: <br>
+                        <input type="text" id="somatorio" class="form-control mt-2" disabled>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+        <!-- Adicionando o JavaScript -->
+        <script src="js/orcamento.js"></script>
+    </body>
+</html>
